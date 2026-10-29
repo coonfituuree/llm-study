@@ -1,0 +1,5 @@
+n, k = map(int, input().split())
+a = list(map(int, input().split()))
+
+threshold = a[k - 1]
+print(sum(1 for x in a if x >= threshold and x > 0))
