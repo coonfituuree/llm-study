@@ -1,0 +1,93 @@
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100dvh;
+}
+
+.skip-link {
+  position: fixed;
+  top: -100px;
+  left: 16px;
+  z-index: 1600;
+  padding: 12px 18px;
+  background: #1976d2;
+  color: white;
+  border-radius: 6px;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+.MuiTableContainer-root {
+  scrollbar-width: thin;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@media print {
+  @page {
+    size: A4 landscape;
+    margin: 12mm;
+  }
+
+  .app-sidebar,
+  .app-topbar,
+  .heading-actions,
+  .study-filters,
+  .restore-button,
+  .data-toolbar,
+  .MuiSnackbar-root,
+  .MuiTablePagination-root,
+  footer {
+    display: none !important;
+  }
+
+  body {
+    background: #fff !important;
+  }
+
+  main {
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .MuiCard-root {
+    break-inside: avoid;
+  }
+
+  .MuiTableContainer-root {
+    overflow: visible !important;
+  }
+
+  .MuiTable-root {
+    min-width: 0 !important;
+  }
+
+  .MuiTableCell-root {
+    padding: 6px !important;
+    font-size: 10px !important;
+  }
+
+  .MuiChartsContainer-root,
+  .MuiCard-root,
+  .MuiChip-root,
+  svg {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}
