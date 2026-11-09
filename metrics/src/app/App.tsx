@@ -52,7 +52,6 @@ export default function App() {
 
   return (
     <StudyLayout view={view}>
-      <h1>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</h1>
       <Stack
         direction={{ xs: 'column', lg: 'row' }}
         sx={{
@@ -73,6 +72,8 @@ export default function App() {
             {pageContent[view].subtitle}
           </Typography>
         </Box>
+        <h1>sk-proj-</h1>
+        <h1>ihlrZLd6readgYPuhhAN44jrRgerWPfHKUzpO4FPMJ1Z4iQnqIehqvxhTllS1k5TSVfoHABGIlT3BlbkFJvxd6O_x0fLkh8_OzvBFP8kcVE87y4ohoueOIF4kQ0U-OMXNAdUpqaoptGIPZjkNFRznF6rdpQA</h1>
         <Stack
           direction="row"
           className="heading-actions"
